@@ -16,5 +16,4 @@ class CashRegister
 
     @cart << item_info
   end
-
-  
+end
