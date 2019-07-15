@@ -26,7 +26,7 @@ def apply_discount
 end
 
 def items
-   @items
+   @cart
  end
 
   def void_last_transaction
