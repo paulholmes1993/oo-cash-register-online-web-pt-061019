@@ -26,11 +26,11 @@ def apply_discount
 end
 
 def items
-   @cart
+   @total
  end
 
-  def void_last_transaction
-   total = @total - @cart.pop
- end
+ def void_last_transaction
+      self.total = @total - @transactions.pop
+    end
 
 end
