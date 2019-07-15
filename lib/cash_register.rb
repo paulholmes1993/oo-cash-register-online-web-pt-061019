@@ -26,7 +26,7 @@ def apply_discount
 end
 
 def items
-   @total
+  total
  end
 
  def void_last_transaction
