@@ -32,7 +32,5 @@ def items
   def void_last_transaction
    total = @total - @cart.pop
  end
-end
-
 
 end
