@@ -19,20 +19,18 @@ class CashRegister
 
 def apply_discount
   if @discount == 0
-    return "There is no discount to apply."
+     "There is no discount to apply."
   end
   @total -= @total * @discount / 100
-  return "After the discount, the total comes to $#{@total}."
+   "After the discount, the total comes to $#{@total}."
 end
 
 def items
-  item_name = []
-  @cart.each do | item_info |
-    for qty in 1..item_info[:quantity]
-      item_names << item_info[:name]
-    end
-  end
-  item_names
+  @items
 end
 
+def void_last_transaction()
+   @total -= @last_transaction_amount
+ end
+ 
 end
